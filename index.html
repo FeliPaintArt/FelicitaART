@@ -9,7 +9,8 @@
       --bg: #ffffff;
       --text: #1a1a1a;
       --text-soft: #555555;
-      --accent: #A7C5EB;
+      --accent: #4A90E2; /* NOUA CULOARE A BUTOANELOR */
+      --accent-hover: #357ABD;
       --font-title: "Montserrat", system-ui, sans-serif;
       --font-body: "Inter", system-ui, sans-serif;
     }
@@ -118,7 +119,7 @@
     }
 
     .btn:hover {
-      background: #8fb0d8;
+      background: var(--accent-hover);
       transform: translateY(-1px);
     }
 
@@ -161,14 +162,9 @@
       overflow: hidden;
       border: 1px solid #eee;
       background: #f7f7f7;
-      height: 220px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-soft);
-      font-size: 14px;
-      text-align: center;
-      padding: 16px;
+      height: 260px;
+      object-fit: cover;
+      width: 100%;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
@@ -176,8 +172,6 @@
       transform: translateY(-3px);
       box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
     }
-
-    .center { text-align: center; }
 
     .about-layout {
       display: grid;
@@ -278,14 +272,12 @@
     </p>
 
     <div class="gallery-grid">
-
       <img src="IMG-20260115-WA0003.jpg" class="gallery-item" alt="Pictură 1">
       <img src="IMG-20260115-WA0004.jpg" class="gallery-item" alt="Pictură 2">
       <img src="IMG-20260115-WA0005.jpg" class="gallery-item" alt="Pictură 3">
       <img src="IMG-20260115-WA0006.jpg" class="gallery-item" alt="Pictură 4">
       <img src="IMG-20260115-WA0007.jpg" class="gallery-item" alt="Pictură 5">
       <img src="IMG-20260115-WA0008.jpg" class="gallery-item" alt="Pictură 6">
-
     </div>
   </section>
 
